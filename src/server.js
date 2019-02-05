@@ -2,6 +2,7 @@ import express from 'express'
 import flash from 'express-flash'
 import hbs from 'express-hbs'
 import session from 'express-session'
+import path from 'path'
 const config = require('../config.js')
 
 import { passport } from './passport/setup'

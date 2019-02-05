@@ -1,6 +1,7 @@
+import { db as sequelize } from '../config'
 import Sequelize from 'sequelize'
 
-export const Users = Sequelize.define('users', {
+export const Users = sequelize.define('users', {
   rollNumbers: {
     type: Sequelize.BIGINT,
     allowNull: false,

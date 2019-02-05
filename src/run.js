@@ -1,6 +1,9 @@
+import debug from 'debug'
 import { db } from './db'
 import { app } from './server'
 const config = require('../config.js')
+
+const log = debug('server:run')
 
 db.sync({
   alter: config.DB.SYNC_ALTER,
