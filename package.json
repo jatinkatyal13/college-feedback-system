@@ -2,9 +2,15 @@
   "name": "feedback-system",
   "version": "1.0.0",
   "description": "Feedback system for college teacher feedback",
-  "main": "src/server.js",
+  "main": "src/run.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf .nyc_output dist coverage",
+    "predev": "yarn lint:fix && yarn build",
+    "dev": "cross-env DEBUG=* NODE_ENV=development node src/run.js",
+    "prestart": "yarn lint",
+    "start": "cross-env NODE_ENV=production node src/run.js",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
   },
   "repository": {
     "type": "git",
@@ -17,12 +23,15 @@
   },
   "homepage": "https://github.com/jatinkatyal13/college-feedback-system#readme",
   "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.13.0",
     "express": "^4.16.4",
     "express-flash": "^0.0.2",
     "express-hbs": "^2.0.1",
     "express-session": "^1.15.6",
     "hbs": "^4.0.1",
     "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
     "pg": "^7.8.0",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.42.0"
