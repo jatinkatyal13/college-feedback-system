@@ -1,0 +1,30 @@
+{
+  "name": "feedback-system",
+  "version": "1.0.0",
+  "description": "Feedback system for college teacher feedback",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jatinkatyal13/college-feedback-system.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jatinkatyal13/college-feedback-system/issues"
+  },
+  "homepage": "https://github.com/jatinkatyal13/college-feedback-system#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-flash": "^0.0.2",
+    "express-hbs": "^2.0.1",
+    "express-session": "^1.15.6",
+    "hbs": "^4.0.1",
+    "passport": "^0.4.0",
+    "pg": "^7.8.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.42.0"
+  }
+}
