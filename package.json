@@ -24,6 +24,7 @@
   "homepage": "https://github.com/jatinkatyal13/college-feedback-system#readme",
   "dependencies": {
     "babel-eslint": "^10.0.1",
+    "cross-env": "^5.2.0",
     "eslint": "^5.13.0",
     "express": "^4.16.4",
     "express-flash": "^0.0.2",
